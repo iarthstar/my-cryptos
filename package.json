@@ -1,7 +1,7 @@
 {
-  "name": "purs-react-basic",
+  "name": "my-cryptos",
   "version": "1.0.0",
-  "description": "PureScript React - Template",
+  "description": "My Cryptos Web App",
   "main": "index.js",
   "author": "Arth K. Gajjar",
   "license": "MIT",
@@ -9,11 +9,11 @@
   "scripts": {
     "install": "bower i",
     "start": "parcel site/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "pulp build && rm -rf dist && parcel build site/index.html",
+    "build": "pulp build && yarn build:site",
     "build:purs": "pulp build",
-    "build:purs:watch": "pulp -w build",
+    "build:site": "rm -rf dist && parcel build site/index.html",
     "watch": "nodemon --watch src -e js,purs --exec \"yarn build && yarn start\"",
+    "watch:purs": "pulp -w build",
     "clean": "rm -rf .cache .pulp-cache .psci_modules .psc-ide-port .purs-repl yarn.lock package-lock.json node_modules bower_components output dist"
   },
   "dependencies": {

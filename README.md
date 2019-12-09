@@ -1,4 +1,6 @@
-# PureScript `react-basic` Template
+# My Cryptos Web App
+
+Track all your Cryptos at one place
 
 A Template to develop Websites in [PureScript](http://www.purescript.org/) using the [`react-basic`](https://github.com/lumihq/purescript-react-basic) library.
 
